@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.tuempresa.ejercicio6_javafx_matriz.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText"/><?xml version="1.0" encoding="UTF-8"?>
+    <?import javafx.geometry.Insets?>
+    <?import javafx.scene.control.*?>
+    <?import javafx.scene.layout.*?>
+
+    <VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.tuempresa.ejercicio6_javafx_matriz.HelloController">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+        <Label text="Suma de Filas y Columnas (Matriz 3x3)" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+        <Label text="Ingresa 9 números enteros separados por comas:"/>
+
+        <TextField fx:id="txtDatosMatriz" promptText="ej: 1,2,3,4,5,6,7,8,9"/>
+
+        <Button text="Calcular Sumas" onAction="#onCalcularClick"/>
+
+        <TextArea fx:id="txtResultado" editable="false" prefHeight="150.0" style="-fx-font-family: monospace;"/>
+    </VBox>
+    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+</VBox>
