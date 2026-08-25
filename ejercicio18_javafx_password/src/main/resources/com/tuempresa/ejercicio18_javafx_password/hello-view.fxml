@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.tuempresa.ejercicio18_javafx_password.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Validador de Contraseña Segura" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <PasswordField fx:id="txtPassword" promptText="Ingresa la contraseña"/>
+
+    <Button text="Validar Fortalezas" onAction="#onValidarClick"/>
+
+    <TextArea fx:id="txtResultado" editable="false" prefHeight="120.0" wrapText="true"/>
+</VBox>
