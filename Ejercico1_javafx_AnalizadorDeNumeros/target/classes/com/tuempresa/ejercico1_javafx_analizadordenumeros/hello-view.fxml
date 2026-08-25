@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.tuempresa.ejercico1_javafx_analizadordenumeros.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Contenedor Horizontal para campo de texto y botones -->
+    <HBox alignment="CENTER" spacing="10.0">
+        <TextField fx:id="txtNumero" promptText="Ingrese un número" />
+        <Button fx:id="btnAgregar" onAction="#onAgregarClick" text="Agregar" />
+        <Button fx:id="btnReiniciar" onAction="#onReiniciarClick" text="Reiniciar" />
+    </HBox>
+
+    <!-- Estado del contador de números -->
+    <Label fx:id="lblEstado" text="Ingresados: 0 de 10" />
+
+    <!-- Etiqueta para mostrar los resultados o mensajes de error -->
+    <Label fx:id="lblResultado" text="Ingrese los 10 números para ver los resultados." textAlignment="CENTER" />
+</VBox>
