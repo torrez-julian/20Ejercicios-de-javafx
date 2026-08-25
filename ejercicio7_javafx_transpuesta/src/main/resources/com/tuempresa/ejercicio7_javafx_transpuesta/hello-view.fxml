@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.tuempresa.ejercicio7_javafx_transpuesta.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Matriz Transpuesta (2x3 -> 3x2)" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <Label text="Ingresa 6 números separados por comas:"/>
+
+    <TextField fx:id="txtValores" promptText="ej: 1, 2, 3, 4, 5, 6"/>
+
+    <Button text="Generar Transpuesta" onAction="#onTransponerClick"/>
+
+    <TextArea fx:id="txtResultado" editable="false" prefHeight="140.0" style="-fx-font-family: monospace;"/>
+</VBox>
