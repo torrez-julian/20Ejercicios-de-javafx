@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.tuempresa.ejercicio14_javafx_factorial.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Cálculo de Factorial" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="txtNumero" promptText="Ingresa un entero positivo (0 a 20)"/>
+
+    <Button text="Calcular Factorial" onAction="#onCalcularClick"/>
+
+    <TextArea fx:id="txtResultado" editable="false" prefHeight="80.0" wrapText="true"/>
+</VBox>
